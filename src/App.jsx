@@ -13,10 +13,15 @@ function App() {
     <>
       <NavBar />
       <div id="home" className="scroll-mt-28"><HeroSection /></div>
+      <div className="w-full h-px bg-gray-200" />
       <div id="features" className="scroll-mt-28"><Features /></div>
+      <div className="w-full h-px bg-gray-200" />
       <div id="reviews" className="scroll-mt-28"><Reviews /></div>
+      <div className="w-full h-px bg-gray-200" />
       <div id="faqs" className="scroll-mt-28"><FAQ /></div>
+      <div className="w-full h-px bg-gray-200" />
       <div id="how-it-works" className="scroll-mt-28"><HowItWorks /></div>
+      <div className="w-full h-px bg-gray-200" />
       <Footer />
     </>
   )

@@ -1,6 +1,7 @@
 import React from 'react';
 import { MapPin, Download, CheckCircle2 } from 'lucide-react';
 import { motion } from 'framer-motion';
+import PixelBlast from './PixelBlast';
 
 const HeroSection = () => {
   return (
@@ -21,7 +22,16 @@ const HeroSection = () => {
       `}</style>
 
       {/* --- Main Content Container --- */}
-      <main className="relative z-10 max-w-7xl mx-auto px-6 pt-28 md:pt-36 pb-20 flex flex-col md:flex-row items-center">
+      <div className="absolute inset-0 z-0">
+        <PixelBlast
+          pixelSize={12}
+          color="#f97316"
+          patternDensity={1.2}
+          className="opacity-40 pointer-events-auto"
+        />
+      </div>
+
+      <main className="relative z-10 max-w-7xl mx-auto px-6 pt-28 md:pt-36 pb-20 flex flex-col md:flex-row items-center pointer-events-none">
 
         {/* Left: Text Content */}
         <motion.div
@@ -36,7 +46,7 @@ const HeroSection = () => {
             initial={{ opacity: 0, y: 10 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.2 }}
-            className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-orange-50 border border-orange-100 text-orange-700 text-sm font-bold shadow-sm"
+            className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-orange-50/80 backdrop-blur-sm border border-orange-100 text-orange-700 text-sm font-bold shadow-sm pointer-events-auto"
           >
             <span className="relative flex h-2.5 w-2.5">
               <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-orange-400 opacity-75"></span>
@@ -79,7 +89,7 @@ const HeroSection = () => {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.6 }}
-            className="flex flex-col sm:flex-row gap-5 pt-4"
+            className="flex flex-col sm:flex-row gap-5 pt-4 pointer-events-auto"
           >
             <motion.button
               whileHover={{ scale: 1.05 }}
@@ -93,7 +103,7 @@ const HeroSection = () => {
             <motion.button
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
-              className="cursor-pointer flex items-center justify-center gap-3 px-8 py-4 bg-white text-gray-900 border-2 border-gray-200 rounded-2xl font-bold text-lg shadow-sm hover:border-orange-300 hover:text-orange-600 transition-colors duration-300"
+              className="cursor-pointer flex items-center justify-center gap-3 px-8 py-4 bg-white/80 backdrop-blur-sm text-gray-900 border-2 border-gray-200 rounded-2xl font-bold text-lg shadow-sm hover:border-orange-300 hover:text-orange-600 transition-colors duration-300"
             >
               <MapPin size={22} />
               Explore Map
@@ -125,7 +135,7 @@ const HeroSection = () => {
           initial={{ opacity: 0, x: 50 }}
           animate={{ opacity: 1, x: 0 }}
           transition={{ duration: 0.8, ease: "easeOut", delay: 0.2 }}
-          className="w-full md:w-1/2 mt-20 md:mt-0 relative h-[600px] perspective-1000"
+          className="w-full md:w-1/2 mt-20 md:mt-0 relative h-[600px] perspective-1000 pointer-events-auto"
         >
 
           {/* Floating Elements adding depth */}
