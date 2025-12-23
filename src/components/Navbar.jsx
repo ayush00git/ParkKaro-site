@@ -15,37 +15,39 @@ const Navbar = () => {
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
 
+
+
   return (
     <motion.nav
       initial={{ y: -100 }}
       animate={{ y: 0 }}
       transition={{ duration: 0.6, ease: "easeOut" }}
       className={`fixed top-0 z-50 w-full transition-all duration-300 ${scrolled
-          ? 'bg-white/90 backdrop-blur-md shadow-sm border-b border-gray-100 py-3'
-          : 'bg-transparent py-5'
+        ? 'bg-white/90 backdrop-blur-md shadow-sm border-b border-gray-100 py-3'
+        : 'bg-transparent py-5'
         }`}
     >
       <div className="max-w-7xl mx-auto px-6 flex items-center justify-between">
 
         {/* --- Logo Section --- */}
-        <div className="flex-shrink-0 cursor-pointer group">
+        <a href="#home" className="flex-shrink-0 cursor-pointer group">
           <span className="text-2xl font-black tracking-tighter text-gray-900">
             Park<span className="text-orange-500 group-hover:text-purple-600 transition-colors duration-300">Karo</span>
           </span>
-        </div>
+        </a>
 
         {/* --- Desktop Navigation --- */}
         <div className="hidden md:flex items-center gap-10">
 
           {/* Links with animated underline */}
           <div className="flex items-center gap-8 text-sm font-semibold text-gray-600">
-            {['Home', 'Locations', 'How it works', 'Pricing'].map((item) => (
+            {[{ name: 'Home', id: '#home' }, { name: 'Features', id: '#features' }, { name: 'Feedbacks', id: '#reviews' }, { name: 'FAQs', id: '#faqs' }, { name: 'How it works', id: '#how-it-works' }].map((item) => (
               <a
-                key={item}
-                href="#"
+                key={item.name}
+                href={item.id}
                 className="relative group py-2 hover:text-gray-900 transition-colors"
               >
-                {item}
+                {item.name}
                 <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-orange-500 transition-all duration-300 group-hover:w-full"></span>
               </a>
             ))}
@@ -84,16 +86,17 @@ const Navbar = () => {
             className="md:hidden fixed inset-0 z-40 bg-white top-[70px] overflow-hidden"
           >
             <div className="px-6 py-8 flex flex-col gap-6">
-              {['Home', 'Locations', 'How it works', 'Pricing'].map((item, i) => (
+              {[{ name: 'Home', id: '#home' }, { name: 'Features', id: '#features' }, { name: 'Feedbacks', id: '#reviews' }, { name: 'FAQs', id: '#faqs' }, { name: 'How it works', id: '#how-it-works' }].map((item, i) => (
                 <motion.a
                   initial={{ opacity: 0, x: -20 }}
                   animate={{ opacity: 1, x: 0 }}
                   transition={{ delay: i * 0.1 }}
-                  key={item}
-                  href="#"
+                  key={item.name}
+                  href={item.id}
+                  onClick={() => setIsOpen(false)}
                   className="flex items-center justify-between text-xl font-bold text-gray-900 border-b border-gray-100 pb-4"
                 >
-                  {item}
+                  {item.name}
                   <ChevronRight size={20} className="text-gray-300" />
                 </motion.a>
               ))}
