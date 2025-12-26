@@ -42,7 +42,7 @@ const Navbar = () => {
 
           {/* Links with animated underline */}
           <div className="flex items-center gap-8 text-sm font-semibold text-gray-600">
-            {[{ name: 'Home', path: '/' }, { name: 'How it works', path: '/how-it-works' }].map((item) => (
+            {[{ name: 'Home', path: '/' }, { name: 'How it works', path: '/how-it-works' }, { name: 'Our Customers', path: '/our-customers' }].map((item) => (
               <Link
                 key={item.name}
                 to={item.path}
@@ -87,7 +87,7 @@ const Navbar = () => {
             className="md:hidden fixed inset-0 z-40 bg-white top-[70px] overflow-hidden"
           >
             <div className="px-6 py-8 flex flex-col gap-6">
-              {[{ name: 'Home', path: '/' }, { name: 'How it works', path: '/how-it-works' }].map((item, i) => (
+              {[{ name: 'Home', path: '/' }, { name: 'How it works', path: '/how-it-works' }, { name: 'Our Customers', path: '/our-customers' }].map((item, i) => (
                 <motion.div
                   initial={{ opacity: 0, x: -20 }}
                   animate={{ opacity: 1, x: 0 }}

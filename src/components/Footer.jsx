@@ -1,6 +1,7 @@
 import React from 'react';
 import { Instagram, Twitter, Linkedin, Facebook, ArrowRight, Heart, MapPin, Mail, Phone } from 'lucide-react';
 import { motion } from 'framer-motion';
+import { Link } from 'react-router-dom';
 
 const Footer = () => {
   return (
@@ -132,9 +133,8 @@ const Footer = () => {
             &copy; {new Date().getFullYear()} Park Karo Technologies Pvt Ltd. All rights reserved.
           </div>
           <div className="flex gap-8">
-            <a href="#" className="hover:text-white transition-colors">Privacy Policy</a>
-            <a href="#" className="hover:text-white transition-colors">Terms of Service</a>
-            <a href="#" className="hover:text-white transition-colors">Cookie Settings</a>
+            <Link to="/privacy-policy" className="hover:text-white transition-colors">Privacy Policy</Link>
+            <Link to="/terms-and-conditions" className="hover:text-white transition-colors">Terms of Service</Link>
           </div>
           <div className="flex items-center gap-1.5 text-gray-500">
             <span>Made with</span>

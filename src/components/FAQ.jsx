@@ -20,8 +20,12 @@ const faqData = [
     answer: "We support all major payment methods including UPI, Credit/Debit cards, and Net Banking. Yes, select malls and garages on our platform now support automatic FastTag deduction for seamless entry/exit."
   },
   {
-    question: "I have an empty driveway. Can I list it?",
-    answer: "Absolutely. You can earn passive income by listing your unused space. Just go to the 'Rent out your space' section, upload photos, set your price, and we'll handle the rest."
+    question: "How do I list my empty driveway or garage?",
+    answer: "Listing is easy and free. Simply go to the 'Host' section in our app, upload photos of your space, set your availability schedule, and choose your hourly or monthly pricing. Your spot will be live after a quick verification check."
+  },
+  {
+    question: "How and when do I get paid for my bookings?",
+    answer: "Earnings are automatically transferred to your linked bank account or UPI ID on a weekly basis. You can track all your past and upcoming bookings, as well as your total revenue, directly from the host dashboard."
   }
 ];
 
