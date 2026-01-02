@@ -37,7 +37,7 @@ const Footer = () => {
 
           </div>
 
-          <div className="lg:pl-20">
+          {/* <div className="lg:pl-20">
             <h3 className="text-white font-bold mb-4">Subscribe to our newsletter</h3>
             <p className="mb-6 text-sm">Get the latest parking hacks and exclusive discounts delivered to your inbox.</p>
             <div className="flex gap-2">
@@ -54,7 +54,7 @@ const Footer = () => {
                 <ArrowRight size={24} />
               </motion.button>
             </div>
-          </div>
+          </div> */}
 
         </div>
 
@@ -67,7 +67,7 @@ const Footer = () => {
               Park<span className="text-orange-500">Karo</span>.
             </div>
             <p className="text-sm leading-relaxed">
-              Making cities more accessible, one parking spot at a time. Designed with ❤️ in India.
+              Making cities more accessible, one parking spot at a time.
             </p>
             <div className="flex gap-4 pt-2">
               <a href="#" className="w-10 h-10 rounded-full bg-gray-800 flex items-center justify-center hover:bg-orange-500 hover:text-white transition-all duration-300">
@@ -86,7 +86,7 @@ const Footer = () => {
           </div>
 
           {/* Links Column 1 */}
-          <div>
+          {/* <div>
             <h4 className="text-white font-bold mb-6">Company</h4>
             <ul className="space-y-4 text-sm font-medium">
               <li><a href="#" className="hover:text-orange-400 transition-colors">About Us</a></li>
@@ -94,21 +94,22 @@ const Footer = () => {
               <li><a href="#" className="hover:text-orange-400 transition-colors">Press</a></li>
               <li><a href="#" className="hover:text-orange-400 transition-colors">Partners</a></li>
             </ul>
-          </div>
+          </div> */}
 
           {/* Links Column 2 */}
-          <div>
+          <div className="flex items-center gap-25 pl-150">
+          <div >
             <h4 className="text-white font-bold mb-6">Product</h4>
             <ul className="space-y-4 text-sm font-medium">
               <li><a href="#" className="hover:text-purple-400 transition-colors">Find Parking</a></li>
               <li><a href="#" className="hover:text-purple-400 transition-colors">List Your Space</a></li>
-              <li><a href="#" className="hover:text-purple-400 transition-colors">Business Solutions</a></li>
-              <li><a href="#" className="hover:text-purple-400 transition-colors">Pricing</a></li>
+              {/* <li><a href="#" className="hover:text-purple-400 transition-colors">Business Solutions</a></li>
+              <li><a href="#" className="hover:text-purple-400 transition-colors">Pricing</a></li> */}
             </ul>
           </div>
 
           {/* Links Column 3 */}
-          <div>
+          <div >
             <h4 className="text-white font-bold mb-6">Contact</h4>
             <ul className="space-y-4 text-sm font-medium">
               <li className="flex items-center gap-2">
@@ -126,7 +127,7 @@ const Footer = () => {
             </ul>
           </div>
         </div>
-
+        </div>
         {/* --- Bottom Bar --- */}
         <div className="pt-8 border-t border-gray-800 flex flex-col md:flex-row justify-between items-center gap-4 text-sm">
           <div className="text-gray-500">
@@ -136,11 +137,11 @@ const Footer = () => {
             <Link to="/privacy-policy" className="hover:text-white transition-colors">Privacy Policy</Link>
             <Link to="/terms-and-conditions" className="hover:text-white transition-colors">Terms of Service</Link>
           </div>
-          <div className="flex items-center gap-1.5 text-gray-500">
+          {/* <div className="flex items-center gap-1.5 text-gray-500">
             <span>Made with</span>
             <Heart size={14} className="fill-orange-500 text-orange-500 animate-pulse" />
             <span>in India</span>
-          </div>
+          </div> */}
         </div>
 
       </div>
