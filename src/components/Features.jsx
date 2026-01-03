@@ -85,7 +85,7 @@ const Features = () => {
               </div>
               <h3 className="text-3xl font-bold text-white mb-2">Smart Navigation</h3>
               <p className="text-gray-200 text-lg">
-                Navigate directly to open spots with live occupancy tracking in 50+ cities.
+                Navigate directly to open spots with live occupancy tracking in 50 cities.
               </p>
             </div>
           </motion.div>
