@@ -32,7 +32,7 @@ const Footer = () => {
               </span>
             </h2>
             <p className="text-lg max-w-md">
-              Join the community of 50,000+ drivers saving time and money every day.
+              Join the community of multiple drivers saving time and money every day.
             </p>
 
           </div>
