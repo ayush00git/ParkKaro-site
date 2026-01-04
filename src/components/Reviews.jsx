@@ -134,7 +134,7 @@ const Reviews = () => {
                   <Star key={i} size={18} className="fill-orange-400 text-orange-400" />
                 ))}
               </div>
-              <p className="text-gray-400 text-sm">Based on 12,000+ reviews</p>
+              <p className="text-gray-400 text-sm">Based on 500 reviews</p>
             </div>
             <div className="pt-8 border-t border-gray-800">
               <p className="font-bold text-lg">"Best Utility App 2025"</p>

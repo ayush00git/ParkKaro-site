@@ -52,7 +52,7 @@ const HeroSection = () => {
               <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-orange-400 opacity-75"></span>
               <span className="relative inline-flex rounded-full h-2.5 w-2.5 bg-orange-500"></span>
             </span>
-            <span>Live in 50+ Cities</span>
+            <span>Live in 50 Cities</span>
           </motion.div>
 
           {/* Big Headline */}
@@ -81,7 +81,7 @@ const HeroSection = () => {
             transition={{ delay: 0.4 }}
             className="text-xl text-gray-600 max-w-lg leading-relaxed md:pr-10"
           >
-            Join millions using <span className="font-bold text-gray-900">Park Karo</span> to find, book, and pay for parking in seconds. The city is yours.
+            Join other active users using <span className="font-bold text-gray-900">Park Karo</span> to find, book, and pay for parking in seconds. The city is yours.
           </motion.p>
 
           {/* High-Impact CTAs */}
@@ -125,7 +125,7 @@ const HeroSection = () => {
               ))}
             </div>
             <div className="text-sm font-medium text-gray-600">
-              <span className="font-bold text-gray-900">50k+</span> happy parkers today.
+              <span className="font-bold text-gray-900">1000</span> happy parkers today.
             </div>
           </motion.div>
         </motion.div>

@@ -4,9 +4,9 @@ import { Users, Award, TrendingUp, Smile, Linkedin, Twitter, Github } from 'luci
 
 const OurCustomersPage = () => {
     const stats = [
-        { label: "Active Users", value: "50,000+", icon: Users, color: "text-blue-500" },
-        { label: "Parking Spots", value: "12,000+", icon: MapPinIcon, color: "text-orange-500" },
-        { label: "Cities Covered", value: "15+", icon: Award, color: "text-purple-500" },
+        { label: "Active Users", value: "1000", icon: Users, color: "text-blue-500" },
+        { label: "Parking Spots", value: "300", icon: MapPinIcon, color: "text-orange-500" },
+        { label: "Cities Covered", value: "50", icon: Award, color: "text-purple-500" },
         { label: "Happy Customers", value: "98%", icon: Smile, color: "text-green-500" },
     ];
 
