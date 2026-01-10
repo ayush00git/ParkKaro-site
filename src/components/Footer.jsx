@@ -86,25 +86,22 @@ const Footer = () => {
           </div>
 
           {/* Links Column 1 */}
-          {/* <div>
+          {<div>
             <h4 className="text-white font-bold mb-6">Company</h4>
             <ul className="space-y-4 text-sm font-medium">
               <li><a href="#" className="hover:text-orange-400 transition-colors">About Us</a></li>
-              <li><a href="#" className="hover:text-orange-400 transition-colors">Careers</a> <span className="text-xs bg-purple-500/20 text-purple-300 px-2 py-0.5 rounded ml-2">Hiring</span></li>
-              <li><a href="#" className="hover:text-orange-400 transition-colors">Press</a></li>
-              <li><a href="#" className="hover:text-orange-400 transition-colors">Partners</a></li>
+              
             </ul>
-          </div> */}
+          </div>}
 
           {/* Links Column 2 */}
-          <div className="flex items-center gap-25 pl-150">
           <div >
             <h4 className="text-white font-bold mb-6">Product</h4>
             <ul className="space-y-4 text-sm font-medium">
               <li><a href="#" className="hover:text-purple-400 transition-colors">Find Parking</a></li>
               <li><a href="#" className="hover:text-purple-400 transition-colors">List Your Space</a></li>
-              {/* <li><a href="#" className="hover:text-purple-400 transition-colors">Business Solutions</a></li>
-              <li><a href="#" className="hover:text-purple-400 transition-colors">Pricing</a></li> */}
+              {/* <li><a href="#" className="hover:text-purple-400 transition-colors">Business Solutions</a></li>*/
+              <li><a href="#" className="hover:text-purple-400 transition-colors">Pricing</a></li> }
             </ul>
           </div>
 
@@ -126,7 +123,6 @@ const Footer = () => {
               </li>
             </ul>
           </div>
-        </div>
         </div>
         {/* --- Bottom Bar --- */}
         <div className="pt-8 border-t border-gray-800 flex flex-col md:flex-row justify-between items-center gap-4 text-sm">
