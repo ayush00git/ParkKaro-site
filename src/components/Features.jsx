@@ -1,13 +1,13 @@
 import React from 'react';
-import { 
-  MapPin, 
-  CreditCard, 
-  CalendarClock, 
-  ShieldCheck, 
-  Zap, 
-  Heart, 
-  User, 
-  ArrowRight 
+import {
+  MapPin,
+  CreditCard,
+  CalendarClock,
+  ShieldCheck,
+  Zap,
+  Heart,
+  User,
+  ArrowRight
 } from 'lucide-react';
 import { motion } from 'framer-motion';
 
@@ -39,7 +39,7 @@ const ParkKaroLanding = () => {
       area: "200 sq.ft",
       host: "Rahul Waghmare",
       liveBookings: 6,
-      image: "https://lh3.googleusercontent.com/p/AF1QipO2tpD3NRPiK7NMo8Ap5tAGUt357jk8YX3rAyyN=w408-h306-k-no"
+      image: "https://t4.ftcdn.net/jpg/03/30/78/77/240_F_330787755_RSUhTI7LvN3UUvGWus7t90Sh8yACJ8Lb.jpg"
     },
     {
       id: 2,
@@ -50,7 +50,7 @@ const ParkKaroLanding = () => {
       area: "20 sq.ft",
       host: "Sachin Pawar",
       liveBookings: 12,
-      image: "https://lh3.googleusercontent.com/gps-cs-s/AG0ilSxshuR__e0Q6Ju_yB7wJzUoYwS5rvszLhapZAIIpzE71od6tA3C0GXOVr2p43RcCJ_NowkAMbEZjZzpd75UOaSEG-oCBu8NvxjSUZJGknS6LHOMGR5tA0ALZ6M65dNBx_NmKd01Aw=w408-h306-k-no"
+      image: "https://t4.ftcdn.net/jpg/06/04/96/89/240_F_604968950_2DLaiGU4qQZFWAx8RwDeVOFoGazaR13l.jpg"
     },
     {
       id: 3,
@@ -67,7 +67,7 @@ const ParkKaroLanding = () => {
 
   return (
     <div className="bg-white font-sans text-gray-900 overflow-x-hidden">
-      
+
       {/*SECTION 1: FEATURES */}
       <section className="py-24">
         <div className="max-w-7xl mx-auto px-6">
@@ -175,7 +175,7 @@ const ParkKaroLanding = () => {
             </motion.button>
           </div>
 
-          <motion.div 
+          <motion.div
             className="grid grid-cols-1 md:grid-cols-3 gap-8"
             variants={containerVariants}
             initial="hidden"
