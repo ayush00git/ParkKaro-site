@@ -9,7 +9,7 @@ const stepsData = [
         title: "Find your perfect spot",
         description: "Enter your destination and instantly see real-time availability. Filter by price, distance, or amenities like EV charging.",
         icon: Search,
-        image: "https://images.unsplash.com/photo-1570129477492-45c003edd2be?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D", // Car navigation
+        image: "https://ik.imagekit.io/40tzr6cnyf/swappy-20260112-011639.png", // Car navigation
         color: "orange"
     },
     {
@@ -17,7 +17,7 @@ const stepsData = [
         title: "Book in seconds",
         description: "Choose your spot and reserve it ahead of time. Pay securely via UPI or card to guarantee your space before you even leave home.",
         icon: CalendarCheck,
-        image: "https://images.unsplash.com/photo-1501504905252-473c47e087f8?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D", // Mobile payment
+        image: "https://ik.imagekit.io/40tzr6cnyf/swappy-20260112-012719.png", // Mobile payment
         color: "purple"
     },
     {
@@ -25,7 +25,7 @@ const stepsData = [
         title: "Park seamlessly",
         description: "Navigate directly to the entrance. Use your digital pass for ticketless entry and exit. No cash, no waiting queues.",
         icon: Car,
-        image: "https://plus.unsplash.com/premium_photo-1661902046698-40bba703f396?q=80&w=1171&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D", // Modern parking garage
+        image: "https://ik.imagekit.io/40tzr6cnyf/swappy-20260112-012531.png", // Modern parking garage
         color: "orange"
     }
 ];
@@ -156,18 +156,7 @@ const HowItWorks = () => {
                                             className="w-full h-full object-cover hover:scale-105 transition-transform duration-700"
                                         />
 
-                                        {/* Optional: Overlay UI element to make it look like an app screen */}
-                                        {index === 1 && (
-                                            <div className="absolute bottom-8 left-8 right-8 bg-white/90 backdrop-blur-md p-4 rounded-2xl shadow-lg flex items-center justify-between">
-                                                <div>
-                                                    <div className="text-sm text-gray-500">Booking Confirmed</div>
-                                                    <div className="font-bold text-purple-600">Cyber City Garage, B2</div>
-                                                </div>
-                                                <div className="bg-green-500 w-10 h-10 rounded-full flex items-center justify-center text-white">
-                                                    <ArrowRight size={20} />
-                                                </div>
-                                            </div>
-                                        )}
+
                                     </motion.div>
                                 </div>
 
