@@ -7,7 +7,6 @@ const Home = () => {
     return (
         <>
             <HeroSection />
-            <div className="w-full h-px bg-gray-200" />
             <Features />
             <div className="w-full h-px bg-gray-200" />
             <Reviews />
